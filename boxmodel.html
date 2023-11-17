@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            color: #111111;
+            font-size: 90%;
+            line-height: 1.2em;
+        }
+        div {
+            height: 300px;
+            width: 400px;
+            height: 300px;
+            background-color: #5858fa;
+        }
+        h2 {
+            color: #0088dd;
+            border-bottom: 1px solid #0088dd;
+        }
+        p {
+            height: 75%;
+            width: 75%;
+            background-color: #e1ddda;
+            min-height: 30px;
+            max-height: 85px;
+        }
+        p.one {
+            overflow: hidden;
+        }
+        p.two {
+            overflow: scroll;
+        }
+        span {
+            border-width: 5px;
+            border-style: solid;
+            border-color: aquamarine;
+            height: 100px;
+            overflow: scroll;
+        }
+        #none {
+            padding: 0px;
+            margin: 0px;
+        }
+        #margin {
+            padding: 0px;
+            margin: 10px;
+        }
+        #both {
+            padding: 10px;
+            margin: 10px;
+        }
+        #padding {
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">go back</a>
+    
+    <div>
+        <h1>A</h1>
+        <p>A copypasta is a block of text copied and pasted to the internet and social media. Copypasta containing controversial ideas or lengthy rants are often posted for humorous purposes, to provoke reactions from those unaware that the posted text is a meme.</p>
+    </div>
+    <div>
+        <h1>The</h1>
+        <p>The term "copypasta" is derived from the computer term "copy/paste", and can be traced back to an anonymous 4chan thread from 2006.[2][3][contradictory]</p>
+    </div>
+    <span id="none">none</span>
+    <span id="none">none</span>
+    <span id="padding">padding</span>
+    <span id="padding">padding</span>
+    <span id="margin">margin</span>
+    <span id="margin">margin</span>
+    <span id="padding">padding</span>
+    <span id="both">both</span>
+    <span id="both">both</span>
+    <span id="none">none</span>
+</body>
+</html>

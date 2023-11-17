@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liquid layout</title>
+    <style type="text/css">
+        * {
+            font-family: Arial, Verdana, sans-serif;
+            color: #665544;
+            text-align: center;
+        }
+        body {
+            width: 90%;
+            margin: 0 auto;
+        }
+        #content {
+            overflow: auto;
+        }
+        #nav, #feature, #footer {
+            margin: 1%;
+        }
+        .column1, .column2, .column3 {
+            width: 31.3%;
+            float: left;
+            margin: 1%;
+        }
+        .column3 {
+            margin-right: 0%;
+        }
+        li {
+            display: inline;
+            padding: 0.5em;
+        }
+        #nav, #footer {
+            background-color: #efefef;
+            padding: 0.5em 0;
+        }
+        #feature, .article {
+            height: 10em;
+            margin-bottom: 1em;
+            background-color: #efefef;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">go back</a>
+
+    <div id="header">
+        <img src="Web capture_15-9-2023_122030_127.0.0.1.jpeg" width="400" height="200" style="border: 1px black solid;">
+        <div id="nav">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div id="feature">
+            <p>feature</p>
+        </div>
+        <div class="article column1">
+            <p>column 1</p>
+        </div>
+        <div class="article column2">
+            <p>column 2</p>
+        </div>
+        <div class="article column3">
+            <p>column 3</p>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; copyright 2023</p>
+    </div>
+</body>
+</html>

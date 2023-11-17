@@ -1,0 +1,66 @@
+<!-- form-validation.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* change the website font */
+        body {
+            font-family: sans-serif;
+        }
+        /* make any elements with the class error look like an error message */
+        .error {
+            border: 2px solid red;
+            width: 175px;
+        }
+        /* add a margin to input elements with the type text */
+        input[type="text"] {
+            margin: 5px;
+        }
+        /* add a bottom margin to input elements with the type submit */
+        input[type="submit"] {
+            margin-bottom: 5px;
+        }
+        /* make labels inline instead of on another line, and align the text to the right */
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+        }
+        /* make the form a set width */
+        form {
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.php" method="post" id="loginForm" novalidate>
+        <fieldset>
+            <legend>Login</legend>
+
+            <div>
+                <label for="fname">first name:</label>
+                <input type="text" name="fname" id="fname" class="form1">
+            </div>
+
+            <div>
+                <label for="sname">surname:</label>
+                <input type="text" name="sname" id="sname">
+            </div>
+
+            <div>
+                <input type="submit" value="login &rarr;" id="submit">
+            </div>
+
+            <div>
+                <input type="reset" value="reset &rarr;" id="reset">
+            </div>
+        </fieldset>
+    </form>
+
+    <script src="reg-form-script-v1.js"></script>
+</body>
+</html>

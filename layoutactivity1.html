@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout activity</title>
+    <style type="text/css">
+        .border {
+            border: 2px solid red;
+            padding: 3px;
+        }
+        .relative {
+            position: relative;
+            left: 100px;
+            top: 50px;
+        }
+        .fixed {
+            position: fixed;
+            right: 0px;
+        }
+        .absolute {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            overflow: scroll;
+        }
+        .sticky {
+            position: sticky;
+            top: 0px;
+        }
+        .floating-l {
+            float:left
+        }
+        .floating-r {
+            float: right;
+        }
+        .size-25 {
+            width: 25%;
+        }
+        .size-50 {
+            width: 50%;
+        }
+        .size-75 {
+            width: 75%;
+        }
+        .size-100 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">go back</a>
+
+    <p class="border relative">relative p tagged element</p>
+
+    <p class="border">static p tagged element</p>
+
+    <p class="border fixed">fixed p element</p>
+
+    <div class="border relative" style="height: 300px; width: 300px;">
+        <div class="border absolute">
+            <div class="border sticky">
+                <span>sticky</span>
+            </div>
+            <p>p in an absolute div in relative div</p>
+        </div>
+    </div>
+
+    <p class="border floating-l">element floating to the left</p>
+    <p class="border floating-r">element floating to the right</p>
+
+    <div class="border size-25">
+        <h1>25% page width w/o auto margin</h1>
+    </div>
+    <div class="border size-50">
+        <h1>50% page width w/o auto margin</h1>
+    </div>
+    <div class="border size-75">
+        <h1>75% page width w/o auto margin</h1>
+    </div>
+    <div class="border size-100">
+        <h1>100% page width w/o auto margin</h1>
+    </div>
+
+    <div class="border size-25" style="margin: auto;">
+        <h1>25% page width with auto margin</h1>
+    </div>
+    <div class="border size-50" style="margin: auto;">
+        <h1>50% page width with auto margin</h1>
+    </div>
+    <div class="border size-75" style="margin: auto;">
+        <h1>75% page width with auto margin</h1>
+    </div>
+    <div class="border size-100" style="margin: auto;">
+        <h1>100% page width with auto margin</h1>
+    </div>
+</body>
+</html>
